@@ -1,5 +1,5 @@
 {% set name = "femto" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Psivant/femto/archive/{{ version }}.tar.gz
-  sha256: fb367529ceb9396ffb6c5fecc8e46d8cd8e37cfd872cc34e3b6e43d986f88897
+  sha256: f5c9d6fa2303247ceb17f632667cf7c48b4f442e6721a9def1700e3785eabb90
 
 build:
   noarch: python
