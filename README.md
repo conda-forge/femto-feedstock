@@ -41,14 +41,14 @@ Current release info
 Installing femto
 ================
 
-Installing `femto` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `femto` from the `conda-forge/label/femto_rc` channel can be achieved by adding `conda-forge/label/femto_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/femto_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `femto` can be installed with `conda`:
+Once the `conda-forge/label/femto_rc` channel has been enabled, `femto` can be installed with `conda`:
 
 ```
 conda install femto
@@ -63,26 +63,26 @@ mamba install femto
 It is possible to list all of the versions of `femto` available on your platform with `conda`:
 
 ```
-conda search femto --channel conda-forge
+conda search femto --channel conda-forge/label/femto_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search femto --channel conda-forge
+mamba search femto --channel conda-forge/label/femto_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search femto --channel conda-forge
+mamba repoquery search femto --channel conda-forge/label/femto_rc
 
 # List packages depending on `femto`:
-mamba repoquery whoneeds femto --channel conda-forge
+mamba repoquery whoneeds femto --channel conda-forge/label/femto_rc
 
 # List dependencies of `femto`:
-mamba repoquery depends femto --channel conda-forge
+mamba repoquery depends femto --channel conda-forge/label/femto_rc
 ```
 
 
