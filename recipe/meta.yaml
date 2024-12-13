@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/Psivant/femto/archive/0.3.0-rc.1.tar.gz
+  url: https://github.com/Psivant/femto/archive/0.3.0-rc.2.tar.gz
   sha256: 011cce7444211fc026b499a648b370e01b2a824d2fd3fdf27f35eb1d12a54201
 
 build:
