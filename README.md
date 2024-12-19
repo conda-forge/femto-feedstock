@@ -154,6 +154,3 @@ Feedstock Maintainers
 
 * [@SimonBoothroyd](https://github.com/SimonBoothroyd/)
 
-
-<!-- dummy commit to enable rerendering -->
-
