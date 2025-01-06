@@ -1,3 +1,4 @@
+{% set python_min = "3.10" %}
 {% set name = "femto" %}
 {% set version = "0.3.0" %}
 
@@ -16,14 +17,16 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
-    - versioneer
+    - setuptools
+    - setuptools_scm >=8
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy
     - scipy
     - pydantic >=2
+    - pydantic-units
     - click
     - cloup
     - pyarrow
@@ -32,13 +35,15 @@ requirements:
     - pandas
     - omegaconf
     - gputil
-    - sympy  # evaluating ctx param expressions
+    - sympy
     - pymbar >=4
     - mpi4py
     - networkx
     - mdtraj
-    - ambertools
     - openmm >=8.1.0
+    - openmmforcefields
+    - mdtop
+    - rdkit
     - seaborn-base
     - tensorboardx
 test:
@@ -46,6 +51,9 @@ test:
     - femto
     - femto.md
     - femto.fe
+  requires:
+    - python {{ python_min }}
+    - pip
 
 about:
   home: https://github.com/Psivant/femto
