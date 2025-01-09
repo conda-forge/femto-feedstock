@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "femto" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/Psivant/femto/archive/{{ version }}.tar.gz
-  sha256: 01b7268c429b99a9438bad8a6fb626ef3200ed3c865cf151c95eee728d5d1ca6
+  sha256: 352857bb0390ee1f6e277180cd7f5e51a2855e3314e9fa151be56f4960ba9d21
 
 build:
   noarch: python
